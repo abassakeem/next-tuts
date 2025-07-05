@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+  title: "My About page App",
+  description: "This is my about page  description",
+};
+
 export default function About() {
   return (
     <div className=''>
