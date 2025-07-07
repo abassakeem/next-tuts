@@ -1,9 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <div className="flex gap-5 items-center flex-col sm:flex-row">
+          <Link href="/articles/breaking-news-123?lang=en" className="">
+            Breaking News in English
+          </Link>
+          <Link href="/articles/breaking-news-123?lang=fr" className="">
+            Breaking News in French
+          </Link>
+        </div>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -20,9 +29,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li className="tracking-[-.01em]">
-            Hello world.
-          </li>
+          <li className="tracking-[-.01em]">Hello world.</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
