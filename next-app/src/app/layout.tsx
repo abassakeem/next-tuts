@@ -1,12 +1,16 @@
-import React from 'react'
-import './globals.css'
+import React from "react";
+import "./globals.css";
 
 export const metadata = {
-  title: 'My App',
-  description: 'This is my app description',
-}
+  title: "My App",
+  description: "This is my app description",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
@@ -21,5 +25,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
       </body>
     </html>
-  )
+  );
 }
